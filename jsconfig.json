@@ -1,0 +1,15 @@
+{
+  //配置@快捷访问路径
+  "compilerOptions": {
+    "target": "es2020",
+    "baseUrl": "./",
+    "types": [
+      "element-plus/global"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  }
+}
