@@ -2,7 +2,7 @@
  * @Author: wmy 2137633492@qq.com
  * @Date: 2023-10-16 21:17:22
  * @LastEditors: wmy 2137633492@qq.com
- * @LastEditTime: 2023-10-17 16:40:51
+ * @LastEditTime: 2023-10-17 19:59:56
  * @FilePath: \honor\README.md
  * @Description: 
  * 
@@ -45,4 +45,20 @@ npm run lint
 ```
 
 ### 重新构建项目结构
+#使用medio结合rem实现响应式
+注意点：html的font-size动态改变不能放在全局的scss文件中，应在index.html中。
+#使用scss在vue中全局导入在vue3中，这一点与vue2不同
+```sh
+  css: {
+     preprocessorOptions: {
+      // 给 sass-loader 传递选项
+      scss: {
+        // @/ 是 src/ 的别名
+        // 所以这里假设你有 `src/variables.sass` 这个文件
+        // 注意：在 sass-loader v8 中，这个选项名是 "prependData"
+        additionalData: `@import "@/style/main.scss";`
+      },
+    },
+  }
+```
 
