@@ -2,7 +2,7 @@
  * @Author: wmy 2137633492@qq.com
  * @Date: 2023-09-26 09:00:20
  * @LastEditors: wmy 2137633492@qq.com
- * @LastEditTime: 2023-10-08 14:43:21
+ * @LastEditTime: 2023-10-17 11:13:09
  * @FilePath: \honor\src\view\Layout\index.vue
  * @Description: 
  * 
@@ -33,7 +33,7 @@ import HomePage12 from './components/HomePage12.vue';
 </script>
 
 <template>
-    <HomeNavVue></HomeNavVue>
+
     <HomePage1></HomePage1>
     <HomePage2></HomePage2>
     <HomePage3></HomePage3>

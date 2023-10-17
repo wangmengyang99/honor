@@ -2,7 +2,7 @@
  * @Author: wmy 2137633492@qq.com
  * @Date: 2023-10-02 22:15:46
  * @LastEditors: wmy 2137633492@qq.com
- * @LastEditTime: 2023-10-06 00:36:13
+ * @LastEditTime: 2023-10-17 00:12:36
  * @FilePath: \honor\src\view\Layout\components\HomePage4.vue
  * @Description: 
  * 
@@ -42,6 +42,7 @@ function throttle(fn, delay) {
     }
   }
 }
+
 /*滚轮控制动画函数 */
 const add=()=> {
   /* 当滚轮到达视口区域时触发动画*/
@@ -142,7 +143,19 @@ onMounted(()=>{
   })
   /*小标题动画 */
   /*链接动画 */
+const observerCallBack=(entries,observer)=>{
+  entries.forEach(element => {
+    console.log(element)    
+  });
+}
+const obsOption={
+  root:null,
+  threshold:0.1,
 
+}
+/*使用intersectionObserver重构路径动画 */
+const observer=new IntersectionObserver(observerCallBack);
+observer.observe(document.querySelector('.page5'))
  
 
 })

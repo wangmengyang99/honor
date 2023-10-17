@@ -1,3 +1,13 @@
+<!--
+ * @Author: wmy 2137633492@qq.com
+ * @Date: 2023-10-16 21:17:22
+ * @LastEditors: wmy 2137633492@qq.com
+ * @LastEditTime: 2023-10-17 16:40:51
+ * @FilePath: \honor\README.md
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
 # honor
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -33,3 +43,6 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### 重新构建项目结构
+
