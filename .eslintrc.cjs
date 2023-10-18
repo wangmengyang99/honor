@@ -9,6 +9,14 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   "rules": {
-    "vue/multi-word-component-names":"false",
+    "vue/multi-word-component-names": "false",
+    'prettier/prettier': ['warn',{
+      singleQuote: true,
+      semi: false,
+      printWidth: 120,
+      endOfLine:'auto'
+    }],
+    
+    'no-undef':'error',
   },
 }

@@ -2,7 +2,7 @@
  * @Author: wmy 2137633492@qq.com
  * @Date: 2023-10-17 10:33:12
  * @LastEditors: wmy 2137633492@qq.com
- * @LastEditTime: 2023-10-17 19:29:37
+ * @LastEditTime: 2023-10-18 12:59:47
  * @FilePath: \honor\src\router\index.js
  * @Description: 
  * 
@@ -22,6 +22,7 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: bauhaus },
+    { path: '/bauhaus', component: bauhaus },
     { path: '/cyberpunk', component: cyberpunk },
     { path: '/memphis', component: memphis },
     { path: '/minimalist', component: minimalist },
